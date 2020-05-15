@@ -1,0 +1,1388 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Helper classes */
+/* line 10, ../sass/screen.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 17, ../sass/screen.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 23, ../sass/screen.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 27, ../sass/screen.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 37, ../sass/screen.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 46, ../sass/screen.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 49, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 54, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 57, ../sass/screen.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* Main */
+/* line 63, ../sass/screen.scss */
+html, body, .wrapper {
+  width: 100%;
+  min-height: 100%;
+  color: white;
+  font-family: Helvetica,Arial,'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','Droid Sans',sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* line 72, ../sass/screen.scss */
+a:link, a:active, a:hover, a:focus, a:visited {
+  color: #ffeb08;
+}
+
+/* line 76, ../sass/screen.scss */
+.header, .footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  z-index: 100;
+}
+
+/* line 84, ../sass/screen.scss */
+.sponly {
+  display: none;
+}
+
+/* line 88, ../sass/screen.scss */
+.content {
+  position: relative;
+  min-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 95, ../sass/screen.scss */
+.inner {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+/* line 103, ../sass/screen.scss */
+.header {
+  top: 0;
+  background-image: url("../../../../20130426043821im_/http_/miku.dominos.jp/img/bg_header.png");
+  background-repeat: repeat-x;
+  background-position: 0 -55px;
+}
+
+/* line 110, ../sass/screen.scss */
+.logo, .navbar {
+  float: left;
+  margin: 7px 0 0 4px;
+}
+
+/* line 115, ../sass/screen.scss */
+.logo a:link,
+.logo a:visited,
+.logo a:hover,
+.logo a:focus,
+.logo a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 124, ../sass/screen.scss */
+.logo {
+  text-align: center;
+  line-height: 1.3;
+  font-size: .8em;
+}
+
+/* line 130, ../sass/screen.scss */
+.appstore {
+  float: right;
+  margin: 9px 60px 0 0;
+}
+
+/* line 135, ../sass/screen.scss */
+.appstore.pconly {
+  width: 234px;
+  height: 80px;
+  position: relative;
+}
+/* line 140, ../sass/screen.scss */
+.appstore.pconly img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Navbar */
+/* line 149, ../sass/screen.scss */
+.navbar {
+  margin: 17px 0 0 25px;
+}
+
+/* line 153, ../sass/screen.scss */
+.navbar li {
+  float: left;
+}
+
+/* line 157, ../sass/screen.scss */
+.descriptionVideo a,
+.pconly .appstore,
+.navbar a {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+}
+
+/* line 166, ../sass/screen.scss */
+.descriptionVideo a *,
+.navbar a * {
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+/* line 175, ../sass/screen.scss */
+.pconly .appstore * {
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+/* line 183, ../sass/screen.scss */
+.pconly .appstore .appstoreOff {
+  opacity: 1;
+}
+
+/* line 187, ../sass/screen.scss */
+.pconly .appstore .appstoreOn {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 192, ../sass/screen.scss */
+.descriptionVideo a:hover img,
+.descriptionVideo a:active img,
+.navbar a:hover img,
+.navbar a:active img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* line 200, ../sass/screen.scss */
+.pconly .appstore:hover .appstoreOff,
+.pconly .appstore:active .appstoreOff {
+  opacity: .5;
+}
+
+/* line 205, ../sass/screen.scss */
+.pconly .appstore:hover .appstoreOn,
+.pconly .appstore:active .appstoreOn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 211, ../sass/screen.scss */
+.descriptionVideo a {
+  background-image: url("../../../../20130426045711im_/http_/miku.dominos.jp/img/video_frame_o.png");
+}
+
+/* line 215, ../sass/screen.scss */
+.navApp a {
+  background-image: url("../../../../20130426044123im_/http_/miku.dominos.jp/img/nav_app_o.png");
+}
+
+/* line 218, ../sass/screen.scss */
+.navCoupon a {
+  background-image: url("../../../../20130426041424im_/http_/miku.dominos.jp/img/nav_coupon_o.png");
+}
+
+/* line 221, ../sass/screen.scss */
+.navTop a {
+  background-image: url("../../../../20130426045148im_/http_/miku.dominos.jp/img/nav_top_o.png");
+}
+
+/* line 224, ../sass/screen.scss */
+.navAppAfter a {
+  background-image: url("../../../../20130426055905im_/http_/miku.dominos.jp/img/nav_app_after_o.png");
+}
+
+/* line 227, ../sass/screen.scss */
+.navMovie a {
+  background-image: url("../../../../20130426054941im_/http_/miku.dominos.jp/img/nav_movie_o.png");
+}
+
+/* line 230, ../sass/screen.scss */
+.navBox a {
+  background-image: url("../../../../20130426042734im_/http_/miku.dominos.jp/img/nav_box_o.png");
+}
+
+/* line 233, ../sass/screen.scss */
+.navBike a {
+  background-image: url("../../../../20130426044512im_/http_/miku.dominos.jp/img/nav_bike_o.png");
+}
+
+/* line 236, ../sass/screen.scss */
+.navSupport a {
+  background-image: url("../../../../20130426041301im_/http_/miku.dominos.jp/img/nav_support_o.png");
+}
+
+/* Footer */
+/* line 242, ../sass/screen.scss */
+.footer {
+  bottom: 0;
+  height: 63px;
+  background-image: url("../../../../20130426055346im_/http_/miku.dominos.jp/img/bg_footer.png");
+  background-repeat: repeat-x;
+  background-position: 0 -20px;
+}
+
+/* line 250, ../sass/screen.scss */
+.copyright {
+  float: left;
+  margin-top: 23px;
+  width: 640px;
+  height: 31px;
+  background-image: url("../../../../20130426053855im_/http_/miku.dominos.jp/img/txt_copyright.png");
+  background-repeat: no-repeat;
+}
+
+/* line 259, ../sass/screen.scss */
+.share {
+  float: right;
+  margin: 21px 40px 0 0;
+}
+
+/* line 264, ../sass/screen.scss */
+.share li {
+  float: left;
+}
+
+/* Top */
+/* line 270, ../sass/screen.scss */
+.top {
+  height: 1420px;
+  background-image: url("../../../../20130426053404im_/http_/miku.dominos.jp/img/bg_top.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+/* line 277, ../sass/screen.scss */
+.top .title {
+  margin-top: 80px;
+}
+
+/* line 281, ../sass/screen.scss */
+.top .mainDescription {
+  margin-top: 5px;
+}
+
+/* line 285, ../sass/screen.scss */
+.top .features {
+  margin-top: 198px;
+}
+
+/* line 289, ../sass/screen.scss */
+.top .mainDescription {
+  margin-left: 24px;
+}
+
+/* line 293, ../sass/screen.scss */
+.top .features {
+  margin-left: 35px;
+}
+
+/* line 297, ../sass/screen.scss */
+.pconly .deviceCompatibility {
+  position: absolute;
+  right: 47px;
+  top: 660px;
+}
+
+/* Section General */
+/* line 305, ../sass/screen.scss */
+.section {
+  position: relative;
+  width: 100%;
+  height: 1245px;
+  margin-top: -535px;
+  background-image: url("../../../../20130426060334im_/http_/miku.dominos.jp/img/bg_coupon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+/* line 315, ../sass/screen.scss */
+.sectionPhrase {
+  position: absolute;
+  height: 159px;
+  width: 945px;
+  top: 319px;
+  background-image: url("../../../../20130426054258im_/http_/miku.dominos.jp/img/coupon_phrase.png");
+  background-repeat: no-repeat;
+  background-position: 473px 0;
+}
+
+/* line 325, ../sass/screen.scss */
+.sectionDetail {
+  position: absolute;
+  top: 491px;
+}
+
+/* line 330, ../sass/screen.scss */
+.sectionFooter {
+  position: absolute;
+  top: 630px;
+}
+
+/* line 335, ../sass/screen.scss */
+.sectionPhrase,
+.sectionDetail,
+.sectionFooter {
+  left: 30px;
+}
+
+/* line 341, ../sass/screen.scss */
+.rightSection .sectionPhrase,
+.rightSection .sectionDetail,
+.rightSection .sectionFooter {
+  right: 40px;
+  text-align: right;
+}
+
+/* Coupon */
+/* Box */
+/* line 352, ../sass/screen.scss */
+.box {
+  margin-top: -578px;
+  height: 1282px;
+  background-image: url("../../../../20130426054503im_/http_/miku.dominos.jp/img/bg_box.png");
+}
+/* line 357, ../sass/screen.scss */
+.box .sectionFooter {
+  top: 760px;
+}
+
+/* line 362, ../sass/screen.scss */
+.box .sectionPhrase {
+  height: 114px;
+  top: 395px;
+  background-image: url("../../../../20130426050305im_/http_/miku.dominos.jp/img/box_phrase.png");
+  background-position: 0 0;
+  opacity: .5;
+}
+
+/* line 370, ../sass/screen.scss */
+.box .sectionDetail {
+  top: 529px;
+  opacity: .5;
+}
+
+/* line 375, ../sass/screen.scss */
+.box .timeoutNotice {
+  position: absolute;
+  top: 440px;
+  left: 50%;
+  margin-left: -510px;
+  width: 572px;
+  height: 228px;
+  z-index: 10;
+  background-image: url("../../../../20130609082033im_/http_/miku.dominos.jp/img/box_timeoutNotice.html");
+}
+
+/* Bike */
+/* line 388, ../sass/screen.scss */
+.bike {
+  margin-top: -531px;
+  height: 1052px;
+  background-image: url("../../../../20130426044603im_/http_/miku.dominos.jp/img/bg_bike.png");
+}
+
+/* line 394, ../sass/screen.scss */
+.bike .sectionPhrase {
+  top: 395px;
+  background-image: url("../../../../20130426053143im_/http_/miku.dominos.jp/img/bike_phrase.png");
+  background-position: 326px 0;
+}
+
+/* line 399, ../sass/screen.scss */
+.bike .sectionDetail {
+  top: 529px;
+}
+
+/* Support */
+/* line 405, ../sass/screen.scss */
+.support {
+  margin-top: -522px;
+  height: 1240px;
+  background-image: url("../../../../20130426042027im_/http_/miku.dominos.jp/img/bg_support.png");
+}
+
+/* line 411, ../sass/screen.scss */
+.support .sectionPhrase {
+  height: 179px;
+  top: 330px;
+  background-image: url("../../../../20130426035635im_/http_/miku.dominos.jp/img/support_phrase.png");
+  background-position: 0 0;
+}
+
+/* line 418, ../sass/screen.scss */
+.support .sectionDetail {
+  top: 515px;
+}
+
+/* DominoCrew */
+/* line 424, ../sass/screen.scss */
+.dominoCrew {
+  margin-top: -709px;
+  height: 800px;
+  background-image: url("../../../../20130426053402im_/http_/miku.dominos.jp/img/bg_dominoCrew.png");
+}
+
+/* line 430, ../sass/screen.scss */
+.dominoCrew .sectionPhrase {
+  height: 208px;
+  top: 260px;
+  background-image: url("../../../../20130426043135im_/http_/miku.dominos.jp/img/dominoCrew_phrase.png");
+  background-position: 500px 0;
+}
+
+/* line 437, ../sass/screen.scss */
+.dominoCrew .sectionDetail {
+  top: 478px;
+}
+
+/* Overlay */
+/* デフォルトでセンタリングして、個別のクラスでmargin-leftによって調整 */
+/* line 444, ../sass/screen.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+}
+
+/* line 451, ../sass/screen.scss */
+.descriptionVideo {
+  top: 520px;
+  margin-left: -466px;
+}
+
+/* line 456, ../sass/screen.scss */
+.appSlide {
+  top: 842px;
+  margin-left: -435px;
+}
+
+/* line 461, ../sass/screen.scss */
+.bikeSlide {
+  top: 2450px;
+  margin-left: -521px;
+}
+
+/* line 466, ../sass/screen.scss */
+.couponInstruction {
+  top: 1690px;
+  margin-left: 75px;
+  padding: 38px 0 0 337px;
+  background-image: url("../../../../20130426055959im_/http_/miku.dominos.jp/img/coupon_note.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* line 475, ../sass/screen.scss */
+.couponInstruction a {
+  display: block;
+  width: 48px;
+  height: 19px;
+}
+
+/* line 481, ../sass/screen.scss */
+.mikuOverlay {
+  position: absolute;
+  top: 997px;
+  margin-left: 250px;
+  width: 336px;
+  height: 540px;
+  pointer-events: none;
+  background-image: url("../../../../20130426043536im_/http_/miku.dominos.jp/img/mikuOverlay.png");
+  background-repeat: no-repeat;
+}
+
+/* Slide Widget */
+/* line 494, ../sass/screen.scss */
+.slideInner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 499, ../sass/screen.scss */
+.slideFilm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550%;
+  height: 100%;
+}
+
+/* line 507, ../sass/screen.scss */
+.slideItem {
+  float: left;
+}
+
+/* line 511, ../sass/screen.scss */
+.slideIndicator {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+/* line 517, ../sass/screen.scss */
+.slideIndicator li {
+  float: left;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../../20130426053500im_/http_/miku.dominos.jp/img/iphone_slider.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+
+/* line 526, ../sass/screen.scss */
+.slideIndicator li.on {
+  background-position: 0 -18px;
+}
+
+/* AppSlide */
+/* line 533, ../sass/screen.scss */
+.appSlide .slideInner {
+  width: 300px;
+  height: 534px;
+}
+
+/* line 538, ../sass/screen.scss */
+.appSlide .slideIndicator {
+  top: 0;
+  left: 327px;
+  width: 568px;
+  height: 502px;
+  background-image: url("../../../../20130426055249im_/http_/miku.dominos.jp/img/appSlide/bg.png");
+  background-repeat: no-repeat;
+  background-position: -170px 0;
+}
+
+/* line 549, ../sass/screen.scss */
+.appSlide .slideIndicator.on0 {
+  background-position: -170px 0px;
+}
+
+/* line 549, ../sass/screen.scss */
+.appSlide .slideIndicator.on1 {
+  background-position: -170px -502px;
+}
+
+/* line 549, ../sass/screen.scss */
+.appSlide .slideIndicator.on2 {
+  background-position: -170px -1004px;
+}
+
+/* line 549, ../sass/screen.scss */
+.appSlide .slideIndicator.on3 {
+  background-position: -170px -1506px;
+}
+
+/* line 549, ../sass/screen.scss */
+.appSlide .slideIndicator.on4 {
+  background-position: -170px -2008px;
+}
+
+/* line 554, ../sass/screen.scss */
+.appSlide .slideIndicator li {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 94px;
+  background-image: none;
+}
+
+/* BikeSlide */
+/* line 564, ../sass/screen.scss */
+.bikeSlide .slideInner {
+  width: 403px;
+  height: 404px;
+}
+
+/* line 569, ../sass/screen.scss */
+.bikeSlide .slideIndicator {
+  margin-left: -162px;
+}
+
+/* line 573, ../sass/screen.scss */
+.bikeSlide .slideIndicator li {
+  margin-right: 5px;
+  width: 60px;
+  height: 70px;
+  background-image: url("../../../../20130426054901im_/http_/miku.dominos.jp/img/bikeSlide/bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% -70px;
+}
+
+/* line 582, ../sass/screen.scss */
+.bikeSlide .slideIndicator img {
+  margin: 14px 5px 5px;
+}
+
+/* line 586, ../sass/screen.scss */
+.bikeSlide .slideIndicator li.on {
+  background-position: 50% 0;
+}
+
+/* line 590, ../sass/screen.scss */
+.bikeSlide .slideIndicator li {
+  -webkit-transition: margin-top .1s ease;
+  -moz-transition: margin-top .1s ease;
+  -ms-transition: margin-top .1s ease;
+  -o-transition: margin-top .1s ease;
+  transition: margin-top .1s ease;
+}
+
+/* line 598, ../sass/screen.scss */
+.bikeSlide .slideIndicator li:hover {
+  margin-top: -5px;
+}
+
+/* 期間後対応 */
+/* line 603, ../sass/screen.scss */
+.hideAfter,
+.after .showAfter {
+  display: block;
+}
+
+/* line 608, ../sass/screen.scss */
+.showAfter,
+.after .hideAfter {
+  display: none;
+}
+
+/* line 613, ../sass/screen.scss */
+.after .top {
+  height: 1080px;
+}
+
+/* line 617, ../sass/screen.scss */
+.after .coupon {
+  height: 1260px;
+  background-image: url("../../../../20130426043000im_/http_/miku.dominos.jp/img/bg_app.png");
+}
+
+/* line 622, ../sass/screen.scss */
+.after .bikeSlide {
+  top: 2160px;
+  margin-left: -521px;
+}
+
+/* line 627, ../sass/screen.scss */
+.mikuCutter {
+  position: absolute;
+  top: 158px;
+  left: 50%;
+  margin-left: 145px;
+  width: 81px;
+  height: 95px;
+  background-image: url("../../../../20130426060410im_/http_/miku.dominos.jp/img/deco_cutter_miku.png");
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 639, ../sass/screen.scss */
+  .sponly {
+    display: block;
+  }
+
+  /* line 643, ../sass/screen.scss */
+  .pconly {
+    display: none !important;
+  }
+
+  /* line 647, ../sass/screen.scss */
+  .content {
+    position: relative;
+    min-width: 320px;
+  }
+
+  /* line 652, ../sass/screen.scss */
+  .inner {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  /* line 660, ../sass/screen.scss */
+  .header {
+    top: 0;
+    height: 45px;
+    background-image: url("../../../../20130426043821im_/http_/miku.dominos.jp/img/bg_header.png");
+    background-repeat: repeat-x;
+    background-position: 0 -31px;
+    background-size: 24px;
+  }
+
+  /* line 669, ../sass/screen.scss */
+  .logo, .navbar {
+    float: left;
+    margin: 2px 0 0 4px;
+  }
+
+  /* line 674, ../sass/screen.scss */
+  .logo {
+    line-height: 1.3;
+    font-size: .4em;
+  }
+
+  /* Navbar */
+  /* line 681, ../sass/screen.scss */
+  .navbar {
+    margin: 7px 0 0 34px;
+  }
+
+  /* line 685, ../sass/screen.scss */
+  .navbar li {
+    float: left;
+  }
+
+  /* Footer */
+  /* line 691, ../sass/screen.scss */
+  .footer {
+    bottom: -40px;
+    height: 95px;
+    background-image: url("../../../../20130426055346im_/http_/miku.dominos.jp/img/bg_footer.png");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 24px;
+  }
+
+  /* line 700, ../sass/screen.scss */
+  .footerLogo {
+    position: absolute;
+    top: 27px;
+    right: 4px;
+  }
+
+  /* line 706, ../sass/screen.scss */
+  .share {
+    position: absolute;
+    top: 24px;
+    left: 4px;
+    margin: 0;
+  }
+
+  /* line 713, ../sass/screen.scss */
+  .share li {
+    float: left;
+  }
+
+  /* Top */
+  /* line 719, ../sass/screen.scss */
+  .top {
+    height: 820px;
+    background-image: url("../../../../20130426043353im_/http_/miku.dominos.jp/img/sp_bg_top.png");
+    background-repeat: no-repeat;
+    background-position: 50% -4px;
+    background-size: 800px;
+  }
+
+  /* line 727, ../sass/screen.scss */
+  .top .title {
+    margin-top: 34px;
+    text-align: right;
+  }
+
+  /* line 732, ../sass/screen.scss */
+  .top .mainDescription {
+    margin-top: 75px;
+  }
+
+  /* line 736, ../sass/screen.scss */
+  .top .appstore {
+    float: none;
+    margin: 0;
+  }
+
+  /* line 741, ../sass/screen.scss */
+  .top .features {
+    margin: 0;
+  }
+
+  /* line 745, ../sass/screen.scss */
+  .top .title,
+  .top .mainDescription,
+  .top .appstore,
+  .top .features {
+    margin-left: 14px;
+  }
+
+  /* line 752, ../sass/screen.scss */
+  .top .screenshot {
+    position: absolute;
+    top: 76px;
+    left: 10px;
+  }
+
+  /* line 758, ../sass/screen.scss */
+  .deviceCompatibility {
+    margin-left: 15px;
+  }
+
+  /* Features */
+  /* line 764, ../sass/screen.scss */
+  .features li {
+    margin: 5px 0;
+    background-image: url("../../../../20130426041923im_/http_/miku.dominos.jp/img/sp_bg_top_block_odd.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 290px 81px;
+  }
+
+  /* line 772, ../sass/screen.scss */
+  .features li:nth-child(even) {
+    background-image: url("../../../../20130426054001im_/http_/miku.dominos.jp/img/sp_bg_top_block_even.png");
+  }
+
+  /* line 776, ../sass/screen.scss */
+  .features li img,
+  .support .sectionFooter img {
+    float: left;
+    margin: 4px;
+    border: 2px solid #ffeb08;
+  }
+
+  /* line 783, ../sass/screen.scss */
+  .features li:nth-child(even) img,
+  .support .sectionFooter img {
+    border-color: #006aa6;
+  }
+
+  /* line 788, ../sass/screen.scss */
+  .features li h2 {
+    margin-top: 10px;
+    width: 196px;
+    height: 21px;
+    background-image: url("../../../../20130426035641im_/http_/miku.dominos.jp/img/feature_01_title.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 196px 21px;
+  }
+
+  /* line 799, ../sass/screen.scss */
+  .features li:nth-child(2) h2 {
+    background-image: url("../../../../20130426042745im_/http_/miku.dominos.jp/img/feature_02_title.png");
+  }
+
+  /* line 799, ../sass/screen.scss */
+  .features li:nth-child(3) h2 {
+    background-image: url("../../../../20130426044806im_/http_/miku.dominos.jp/img/feature_03_title.png");
+  }
+
+  /* line 799, ../sass/screen.scss */
+  .features li:nth-child(4) h2 {
+    background-image: url("../../../../20130426054559im_/http_/miku.dominos.jp/img/feature_04_title.png");
+  }
+
+  /* line 799, ../sass/screen.scss */
+  .features li:nth-child(5) h2 {
+    background-image: url("../../../../20130426060143im_/http_/miku.dominos.jp/img/feature_05_title.png");
+  }
+
+  /* line 804, ../sass/screen.scss */
+  .features li p {
+    margin-left: 1.5em;
+    width: 29em;
+    font-size: .8em;
+    line-height: 1.2;
+  }
+
+  /* Section General */
+  /* line 813, ../sass/screen.scss */
+  .section {
+    position: relative;
+    width: 100%;
+    height: 567px;
+    margin-top: 0;
+    background-image: url("../../../../20130426040236im_/http_/miku.dominos.jp/img/sp_bg_coupon.png");
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 320px;
+  }
+
+  /* line 824, ../sass/screen.scss */
+  .section .inner {
+    background-image: url("../../../../20130426041639im_/http_/miku.dominos.jp/img/sp_coupon_miku.png");
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 50% 25px;
+  }
+
+  /* line 832, ../sass/screen.scss */
+  .sectionHeader {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 47px;
+    margin-top: 0;
+    background-image: url("../../../../20130426053234im_/http_/miku.dominos.jp/img/sp_coupon_header.png");
+    background-position: 50% 0;
+    background-repeat: repeat-x;
+    background-size: 480px;
+  }
+
+  /* line 844, ../sass/screen.scss */
+  .sectionPhrase {
+    position: static;
+    width: 290px;
+    height: 74px;
+    margin: 45px auto;
+    background-image: url("../../../../20130426043134im_/http_/miku.dominos.jp/img/sp_coupon_phrase.png");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 290px;
+  }
+
+  /* line 855, ../sass/screen.scss */
+  .sectionDetail {
+    position: static;
+    margin-top: 190px;
+    text-align: center;
+    color: #0099b1;
+  }
+
+  /* line 862, ../sass/screen.scss */
+  .sectionDetail img {
+    margin-top: 8px;
+  }
+
+  /* line 866, ../sass/screen.scss */
+  .sectionFooter,
+  .sectionNote {
+    position: static;
+    text-align: left;
+    padding: 2px 14px;
+    font-size: .8em;
+    color: #0099b1;
+  }
+
+  /* line 875, ../sass/screen.scss */
+  .rightSection .sectionHeader {
+    top: -8px;
+  }
+
+  /* line 878, ../sass/screen.scss */
+  .rightSection .sectionPhrase,
+  .rightSection .sectionDetail {
+    text-align: center;
+    color: white;
+  }
+
+  /* line 883, ../sass/screen.scss */
+  .rightSection .sectionFooter {
+    text-align: left;
+    color: white;
+  }
+
+  /* Coupon */
+  /* line 890, ../sass/screen.scss */
+  .coupon .sectionPhrase {
+    margin: 34px auto;
+  }
+
+  /* line 894, ../sass/screen.scss */
+  .coupon .sectionDetail {
+    text-shadow: -1px -1px 0 #0099b1, -1px 1px 0 #0099b1, 1px 1px 0 #0099b1, 1px -1px 0 #0099b1;
+  }
+
+  /* Box */
+  /* line 900, ../sass/screen.scss */
+  .box {
+    height: 500px;
+    background-image: url("../../../../20130426041206im_/http_/miku.dominos.jp/img/sp_bg_box.png");
+  }
+  /* line 904, ../sass/screen.scss */
+  .box .timeoutNotice {
+    top: 315px;
+    margin-left: -145px;
+    width: 289px;
+    height: 132px;
+    background-image: url("../../../../20130609082033im_/http_/miku.dominos.jp/img/sp_box_timeoutNotice.html");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+  }
+  /* line 914, ../sass/screen.scss */
+  .box .sectionPhrase {
+    opacity: 1;
+  }
+  /* line 918, ../sass/screen.scss */
+  .box .sectionFooter {
+    opacity: .5;
+  }
+  /* line 922, ../sass/screen.scss */
+  .box .sectionNote {
+    margin: 5px auto;
+    width: 270px;
+    padding: 5px 10px 10px;
+    line-height: 1;
+    background-image: url(../../../../20130426055932im_/http_/miku.dominos.jp/img/sp_box_note_bg.png);
+    background-size: 290px;
+  }
+  /* line 930, ../sass/screen.scss */
+  .box .sectionNote .noteTitle {
+    margin-bottom: 5px;
+    text-align: center;
+    color: #c2007b;
+    font-weight: bold;
+  }
+
+  /* line 939, ../sass/screen.scss */
+  .box .inner {
+    background-image: url("../../../../20130426042212im_/http_/miku.dominos.jp/img/sp_box_miku.png");
+    background-size: 320px;
+    background-position: 50% 99px;
+  }
+
+  /* line 946, ../sass/screen.scss */
+  .box .sectionHeader {
+    background-image: url("../../../../20130426044949im_/http_/miku.dominos.jp/img/sp_box_header.png");
+  }
+
+  /* line 950, ../sass/screen.scss */
+  .box .sectionPhrase {
+    height: 114px;
+    background-image: url("../../../../20130426051503im_/http_/miku.dominos.jp/img/sp_box_phrase.png");
+    background-position: 0 0;
+  }
+
+  /* line 956, ../sass/screen.scss */
+  .box .sectionDetail {
+    margin-top: 142px;
+  }
+
+  /* Bike */
+  /* line 962, ../sass/screen.scss */
+  .bike {
+    height: 422px;
+    background-image: url("../../../../20130426044131im_/http_/miku.dominos.jp/img/sp_bg_bike.png");
+    background-size: 15px 15px;
+  }
+
+  /* line 968, ../sass/screen.scss */
+  .bike .inner {
+    background-image: url("../../../../20130426042431im_/http_/miku.dominos.jp/img/sp_bike_miku.png");
+    background-size: 320px;
+    background-position: 50% 95px;
+  }
+
+  /* line 974, ../sass/screen.scss */
+  .bike .sectionHeader {
+    background-image: url("../../../../20130426055743im_/http_/miku.dominos.jp/img/sp_bike_header.png");
+  }
+
+  /* line 978, ../sass/screen.scss */
+  .bike .sectionPhrase {
+    height: 114px;
+    background-image: url("../../../../20130426040122im_/http_/miku.dominos.jp/img/sp_bike_phrase.png");
+    background-position: 0 0;
+  }
+
+  /* line 984, ../sass/screen.scss */
+  .bike .sectionDetail {
+    margin-top: 181px;
+    color: #ffeb08;
+  }
+
+  /* Support */
+  /* line 991, ../sass/screen.scss */
+  .support {
+    height: 455px;
+    background-image: url("../../../../20130426041206im_/http_/miku.dominos.jp/img/sp_bg_box.png");
+  }
+
+  /* line 996, ../sass/screen.scss */
+  .support .inner {
+    background-image: url("../../../../20130426051513im_/http_/miku.dominos.jp/img/sp_support_miku.png");
+    background-size: 271px;
+    background-position: 50% 105px;
+  }
+
+  /* line 1002, ../sass/screen.scss */
+  .support .sectionHeader {
+    background-image: url("../../../../20130426044519im_/http_/miku.dominos.jp/img/sp_support_header.png");
+  }
+
+  /* line 1006, ../sass/screen.scss */
+  .support .sectionPhrase {
+    height: 114px;
+    background-image: url("../../../../20130426045720im_/http_/miku.dominos.jp/img/sp_support_phrase.png");
+    background-position: 0 0;
+  }
+
+  /* line 1012, ../sass/screen.scss */
+  .support .sectionDetail {
+    margin-top: 83px;
+    padding: 0 15px;
+    color: #d0112b;
+    text-align: left;
+  }
+
+  /* line 1019, ../sass/screen.scss */
+  .support .sectionFooter {
+    margin: 5px auto;
+    width: 290px;
+    padding: 0;
+    background-color: #ffeb08;
+    line-height: 1.1;
+  }
+
+  /* line 1027, ../sass/screen.scss */
+  .support .sectionFooter h2 {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  /* line 1033, ../sass/screen.scss */
+  .support .sectionFooter p {
+    margin: 3px 2px 2px;
+    color: #d0112b;
+  }
+
+  /* line 1038, ../sass/screen.scss */
+  .support .sectionFooter strong {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  /* DominoCrew */
+  /* line 1045, ../sass/screen.scss */
+  .dominoCrew {
+    margin-top: -30px;
+    height: 526px;
+    background-image: url("../../../../20130426041419im_/http_/miku.dominos.jp/img/sp_bg_dominoCrew.png");
+  }
+
+  /* line 1051, ../sass/screen.scss */
+  .dominoCrew .inner {
+    background-image: url("../../../../20130426044707im_/http_/miku.dominos.jp/img/sp_dominoCrew_miku.png");
+    background-size: 250px;
+    background-position: 50% 51px;
+  }
+
+  /* line 1057, ../sass/screen.scss */
+  .dominoCrew .sectionHeader {
+    background-image: url("../../../../20130426045445im_/http_/miku.dominos.jp/img/sp_dominoCrew_header.html");
+  }
+
+  /* line 1061, ../sass/screen.scss */
+  .dominoCrew .sectionPhrase {
+    margin-top: 31px;
+    height: 114px;
+    background-image: url("../../../../20130426044255im_/http_/miku.dominos.jp/img/sp_dominoCrew_phrase.png");
+    background-position: 0 0;
+  }
+
+  /* line 1068, ../sass/screen.scss */
+  .dominoCrew .sectionDetail {
+    margin-top: 140px;
+    padding: 0 14px;
+    text-align: left;
+  }
+
+  /* line 1074, ../sass/screen.scss */
+  .dominoCrew .sectionFooter {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* line 1079, ../sass/screen.scss */
+  .inlineCopyright {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* 期間後対応 */
+  /* line 1085, ../sass/screen.scss */
+  .after .top {
+    height: 820px;
+  }
+
+  /* line 1089, ../sass/screen.scss */
+  .after .navbar {
+    margin-left: 40px;
+  }
+
+  /* line 1093, ../sass/screen.scss */
+  .after .coupon {
+    height: 237px;
+    margin-top: 0;
+    background-image: url("../../../../20130426040236im_/http_/miku.dominos.jp/img/sp_bg_coupon.png");
+    background-repeat: repeat;
+    background-position: 50% 0;
+    background-size: 320px;
+  }
+  /* line 1101, ../sass/screen.scss */
+  .after .coupon .sectionHeader {
+    background-image: url(../../../../20130426054207im_/http_/miku.dominos.jp/img/sp_movie_header.png);
+  }
+  /* line 1105, ../sass/screen.scss */
+  .after .coupon .inner {
+    background: none;
+  }
+  /* line 1109, ../sass/screen.scss */
+  .after .coupon a {
+    display: block;
+    margin: 40px auto 0;
+    width: 290px;
+  }
+}
+
+/*
+     FILE ARCHIVED ON 08:20:33 Jun 09, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 18:11:13 May 15, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.296
+  exclusion.robots.policy: 0.278
+  RedisCDXSource: 411.54
+  load_resource: 716.918
+  CDXLines.iter: 16.09 (3)
+  PetaboxLoader3.datanode: 73.239 (4)
+  esindex: 0.023
+  captures_list: 522.995
+  LoadShardBlock: 90.521 (3)
+  PetaboxLoader3.resolve: 716.571 (2)
+*/
